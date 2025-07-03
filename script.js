@@ -22,7 +22,7 @@ const lastTeacher=teachers.pop();
 console.log(`${teachers}`);
 console.log(`${lastTeacher}`);
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers.pop();
+const firstTeacher = teachers.shift();
 console.log(`${teachers}`);
 console.log(`${lastTeacher}`);
 
@@ -34,7 +34,9 @@ teachers.unshift("Sarah");
 console.log(`${teachers}`);
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
+const lewisIndex = teachers.indexOf("Lewis");
+console.log(`${lewisIndex}`);
+console.log(`${teachers}`);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
